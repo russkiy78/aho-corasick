@@ -36,7 +36,7 @@ int AhoCorasick::findExactly(QString text)
 QMap<int, QString> input {{1,"ba"},{2,"aa"}};
 AhoCorasick aho;
 aho.buildMachine(input, true);
-QVector<QPair<int,QVector<int>>>matches =  aho.findExactly(QString("ba"));
+int match = aho.findExactly(QString("ba"));
 // return  1
 ```
 
